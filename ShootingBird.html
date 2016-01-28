@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Shooting Bird</title>
+		<style>
+			canvas {
+				background: transparent;
+			}
+            
+            #container {
+                position: relative;
+                display: inline-block;
+            }
+            
+            #score {
+                color: white;
+                position: absolute;
+                right: 15px;
+                top: 15px;
+                font-size: 30px;
+            }
+		</style>
+
+
+	</head>
+	<body onload="animate()">
+
+        <div id="container">
+            <!-- The canvas for the panning background -->
+            <canvas id="background" width="1000" height="500">
+                Your browser does not support canvas. Please try again with a different browser.
+            </canvas>
+            <div id="score">Score: <span>0</span></div>
+        </div>
+
+		<script src="ShootingBird.js"></script>
+		<script src="GameFrameworkJS.js"></script>
+
+    </body>
+</html>
