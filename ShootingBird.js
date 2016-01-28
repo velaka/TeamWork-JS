@@ -94,6 +94,8 @@ function animate() {
 	if (upKey && heroY > 0) heroY -= 7;
 	else if (downKey && heroY + 93 < 500) heroY += 7;
     
+// enemy die
+	
     for (var i = 0; i < bulletsArr.length; i++) {
         for (var j = 0; j < enemyArr.length; j++) {
             var bullet = bulletsArr[i];
@@ -117,7 +119,8 @@ function animate() {
             score -= 20;
         }
     }
-                
+     
+//score	 
     document.querySelector('#score span').innerText = score;
 };
 
