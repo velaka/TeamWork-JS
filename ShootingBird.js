@@ -2,7 +2,8 @@ var bulletsArr = [];
 
 var enemyArr = [];
 
-var score = 0 ;
+var score = 0;
+var life = 3;
 
 function Hero() {
     this.x = 0;
@@ -117,11 +118,14 @@ function animate() {
             enemyArr.splice(i, 1);
             i--;
             score -= 20;
+            life -= 1;
         }
     }
      
 //score	 
     document.querySelector('#score span').innerText = score;
+//life
+    document.querySelector('#life span').innerText = life;
 };
 
 function keyDown(e) {

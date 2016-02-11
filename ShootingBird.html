@@ -6,6 +6,10 @@
 			canvas {
 				background: transparent;
 			}
+			
+			body {
+				text-align: center;
+			}
             
             #container {
                 position: relative;
@@ -19,6 +23,15 @@
                 top: 15px;
                 font-size: 30px;
             }
+			
+			#life {
+                color: white;
+                position: absolute;
+                right: 900px;
+                top: 15px;
+                font-size: 30px;
+            }
+			
 		</style>
 
 
@@ -30,7 +43,8 @@
             <canvas id="background" width="1000" height="500">
                 Your browser does not support canvas. Please try again with a different browser.
             </canvas>
-            <div id="score">Score: <span>0</span></div>
+            <div id="life">Life: <span>3</span></div>
+			<div id="score">Score: <span>0</span></div>
         </div>
 
 		<script src="ShootingBird.js"></script>
