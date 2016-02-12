@@ -9,11 +9,23 @@
 			
 			body {
 				text-align: center;
+				background-image: url("img/background.png"); 
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+			}
+			
+			#name {
+				font-family: cursive;
+				font-variant: small-caps;
+				color: yellow; 
+				font-size: 50px;
+				margin: 0 auto;
 			}
             
             #container {
                 position: relative;
                 display: inline-block;
+				margin-top: 45px;
             }
             
             #score {
@@ -37,6 +49,8 @@
 
 	</head>
 	<body onload="animate()">
+	
+		<div id="name">Shooting Bird</div>
 
         <div id="container">
             <!-- The canvas for the panning background -->

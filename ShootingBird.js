@@ -13,13 +13,11 @@ function Hero() {
 function Enemy() {
     this.x = 1000;
     this.y = getRandomInt(10, 400);
-    //this.boundingBox = new Rectangle(x , y);
 }
 
 function Bullet(){
 	this.x = 0;
-	this.y = 0;
-    //this.boundingBox = new Rectangle(x ,y);    
+	this.y = 0;;    
 }
 
 
@@ -28,7 +26,7 @@ setInterval(function(){
     asd.x
     asd.y
     enemyArr.push(new Enemy);
- }, 1000);
+ }, 800);
 
 
 
@@ -61,11 +59,11 @@ var heroY = bgCanvas.height / 2;
 function animate() {
 	requestAnimFrame( animate );
 
-    // backg
+// backg
 	
 	bgCanvas.getContext('2d').clearRect(0, 0, bgCanvas.width, bgCanvas.height);
 
-	//backg move
+//backg move
 
 	x -= 1;
 	if(x < -bgCanvas.width)
@@ -103,7 +101,7 @@ function animate() {
             var enemy = enemyArr[j];
             if (bullet.x > enemy.x && bullet.x < enemy.x + 47 && bullet.y > enemy.y && bullet.y < enemy.y + 59) {
                 enemyArr.splice(j, 1);
-                j--;
+				j--;
                 bulletsArr.splice(i, 1);
                 i--;
                 
