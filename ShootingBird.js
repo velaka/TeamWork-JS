@@ -117,13 +117,17 @@ function animate() {
             i--;
             score -= 20;
             life -= 1;
+			if(!life){
+				alert("GAME OVER");
+				document.location.reload();
+			}
         }
     }
      
 //score	 
     document.querySelector('#score span').innerText = score;
 //life
-    document.querySelector('#life span').innerText = life;
+    document.querySelector('#life span').innerText = life;	
 };
 
 function keyDown(e) {
